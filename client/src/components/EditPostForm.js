@@ -9,7 +9,7 @@ function EditPostForm() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [status, setStatus] = useState("");
-
+  const [category, setCategory] = useState("");
   useEffect(() => {
     getPostById(params.postId);
   }, []);
@@ -28,6 +28,7 @@ function EditPostForm() {
       title,
       content,
       status,
+      category,
     });
   };
 
